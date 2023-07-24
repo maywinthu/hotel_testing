@@ -42,6 +42,10 @@ use App\Models\Testimonial as ModelsTestimonial;
 //     return $request->user();
 // });
 
+Route::prefix("v1")->group( function() {
+
+});
+
 Route::post("/register",[ApiAuthController::class,'register'])->name('api.register');
 Route::post("/login",[ApiAuthController::class,'login'])->name('api.login');
 

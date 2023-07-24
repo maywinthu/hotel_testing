@@ -1,0 +1,3921 @@
+{
+	"info": {
+		"_postman_id": "7bbabbe1-3e38-450b-b01a-a0c4ffbda268",
+		"name": "Hotel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23891030"
+	},
+	"item": [
+		{
+			"name": "RoomType",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/roomtypes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"roomtypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/roomtypes/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"roomtypes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "room_name",
+									"value": "Luxury Suite",
+									"type": "text"
+								},
+								{
+									"key": "room_price",
+									"value": "65800",
+									"type": "text"
+								},
+								{
+									"key": "default_room_price",
+									"value": "90000",
+									"type": "text"
+								},
+								{
+									"key": "rooming",
+									"value": "house keeping",
+									"type": "text"
+								},
+								{
+									"key": "room_description",
+									"value": "double room",
+									"type": "text"
+								},
+								{
+									"key": "room_size",
+									"value": "40-55 sqm",
+									"type": "text"
+								},
+								{
+									"key": "facilities",
+									"value": "Bath Tub",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/roomtypes/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"roomtypes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Partial Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "room_name",
+									"value": "Grand Suite Roomxe",
+									"type": "text"
+								},
+								{
+									"key": "room_price",
+									"value": "72000",
+									"type": "text"
+								},
+								{
+									"key": "default_room_price",
+									"value": "70000",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "rooming",
+									"value": "washiing",
+									"type": "text"
+								},
+								{
+									"key": "room_description",
+									"value": "special room",
+									"type": "text"
+								},
+								{
+									"key": "room_size",
+									"value": "40-55 sqm",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "facilities",
+									"value": "Bath Tub",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/roomtypes/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"roomtypes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/roomtypes/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"roomtypes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "room_name",
+									"value": "The Penthouse",
+									"type": "text"
+								},
+								{
+									"key": "room_price",
+									"value": "90000",
+									"type": "text"
+								},
+								{
+									"key": "default_room_price",
+									"value": "98000",
+									"type": "text"
+								},
+								{
+									"key": "rooming",
+									"value": "cleanning",
+									"type": "text"
+								},
+								{
+									"key": "room_description",
+									"value": "special room",
+									"type": "text"
+								},
+								{
+									"key": "room_size",
+									"value": "62 Sqm",
+									"type": "text"
+								},
+								{
+									"key": "facilities",
+									"value": "All",
+									"type": "text"
+								},
+								{
+									"key": "photos[]",
+									"type": "file",
+									"src": [
+										"/C:/Users/User/Pictures/Screenshots/Screenshot (4).png",
+										"/C:/Users/User/Pictures/Screenshots/Screenshot (5).png",
+										"/C:/Users/User/Pictures/Screenshots/Screenshot (6).png",
+										"/C:/Users/User/Pictures/Screenshots/Screenshot (7).png"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/roomtypes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"roomtypes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Photo",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/photos",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/photos/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"photos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "room_type_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "photos[]",
+									"type": "file",
+									"src": [
+										"/C:/Users/User/Pictures/Screenshots/Screenshot (4).png",
+										"/C:/Users/User/Pictures/Screenshots/Screenshot (5).png",
+										"/C:/Users/User/Pictures/Screenshots/Screenshot (6).png",
+										"/C:/Users/User/Pictures/Screenshots/Screenshot (7).png",
+										"/C:/Users/User/Pictures/Screenshots/Screenshot (8).png",
+										"/C:/Users/User/Pictures/Screenshots/Screenshot (9).png",
+										"/C:/Users/User/Pictures/Screenshots/Screenshot (10).png",
+										"/C:/Users/User/Pictures/Screenshots/Screenshot (11).png",
+										"/C:/Users/User/Pictures/Screenshots/Screenshot (12).png"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/photos",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"photos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Room",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rooms",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rooms/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rooms",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "room_no",
+									"value": "A0001",
+									"type": "text"
+								},
+								{
+									"key": "room_type_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "room_occupancy",
+									"value": "Yangon",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rooms/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rooms",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Partial Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "room_no",
+									"value": "AA1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "room_type_id",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "room_occupancy",
+									"value": "Tarmwe",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rooms/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rooms",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rooms/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rooms",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "room_no",
+									"value": "DD5",
+									"type": "text"
+								},
+								{
+									"key": "room_type_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "room_occupancy",
+									"value": "Yangon",
+									"type": "text"
+								},
+								{
+									"key": "hotel_id",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rooms",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hotel",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hotels",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hotels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hotels/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hotels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "hotel_code",
+									"value": "kkkk7",
+									"type": "text"
+								},
+								{
+									"key": "hotel_name",
+									"value": "Royal Garden",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Inlay",
+									"type": "text"
+								},
+								{
+									"key": "post_code",
+									"value": "c81f",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Shan State",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Singapore",
+									"type": "text"
+								},
+								{
+									"key": "num_rooms",
+									"value": "300",
+									"type": "text"
+								},
+								{
+									"key": "phone_no",
+									"value": "09-789452160",
+									"type": "text"
+								},
+								{
+									"key": "star_rating",
+									"value": "15",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hotels/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hotels",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Partial",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "hotel_code",
+									"value": "T54h",
+									"type": "text"
+								},
+								{
+									"key": "hotel_name",
+									"value": "Royal Garden",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "Singapore",
+									"type": "text"
+								},
+								{
+									"key": "post_code",
+									"value": "c81f",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Shan State",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "country",
+									"value": "Thai",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "num_rooms",
+									"value": "300",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone_no",
+									"value": "09-789452160",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "star_rating",
+									"value": "15",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hotels/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hotels",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hotels/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hotels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "hotel_code",
+									"value": "Ac234p",
+									"type": "text"
+								},
+								{
+									"key": "hotel_name",
+									"value": "Bagan Myay",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Madalay",
+									"type": "text"
+								},
+								{
+									"key": "post_code",
+									"value": "k01",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Shwe Nyaung",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Myanmar",
+									"type": "text"
+								},
+								{
+									"key": "num_rooms",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "phone_no",
+									"value": "09 478591236",
+									"type": "text"
+								},
+								{
+									"key": "star_rating",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hotels",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hotels"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Guest",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/guests",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"guests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/guests/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"guests",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/guests/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"guests",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guest_title",
+									"value": "Visit Visa",
+									"type": "text"
+								},
+								{
+									"key": "guest_name",
+									"value": "nunu",
+									"type": "text"
+								},
+								{
+									"key": "DOB",
+									"value": "1970-06-1",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "female",
+									"type": "text"
+								},
+								{
+									"key": "phone_no",
+									"value": "09-789456123",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "nu@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "nrc",
+									"value": "12/MGD(N)265922",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Claiforina America",
+									"type": "text"
+								},
+								{
+									"key": "passport_no",
+									"value": "AD17890",
+									"type": "text"
+								},
+								{
+									"key": "post_code",
+									"value": "S4hj",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "NewYork",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "America",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "asdffdfa",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Toe",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Kyu",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "asdffdfa",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/User/Pictures/Screenshots/Screenshot (12).png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/guests",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"guests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "guest_title",
+									"value": "asddgfgfg",
+									"type": "text"
+								},
+								{
+									"key": "guest_name",
+									"value": "aaa",
+									"type": "text"
+								},
+								{
+									"key": "DOB",
+									"value": "1989-07-10",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "female",
+									"type": "text"
+								},
+								{
+									"key": "phone_no",
+									"value": "09-778915202",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ad@gmial.com",
+									"type": "text"
+								},
+								{
+									"key": "nrc",
+									"value": "12/kjik784",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "ojlkm,,,,,,,,,,,,,,,,,,,,,,,,,[",
+									"type": "text"
+								},
+								{
+									"key": "passport_no",
+									"value": "78addd",
+									"type": "text"
+								},
+								{
+									"key": "post_code",
+									"value": "dadfdf",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "agdgdgdgg",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "agdfggfgfgfgfg",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "agdfggfgfgfgfg",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "aa",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "bb",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "agdfggfgfgfgfg",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/guests/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"guests",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Patial",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "guest_title",
+									"value": "lwin lwin mar",
+									"type": "text"
+								},
+								{
+									"key": "guest_name",
+									"value": "aaa",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "DOB",
+									"value": "1989-07-10",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone_no",
+									"value": "09-778915202",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "ad@gmial.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "nrc",
+									"value": "12/kjik784",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "ojlkm,,,,,,,,,,,,,,,,,,,,,,,,,[",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "passport_no",
+									"value": "78addd",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "post_code",
+									"value": "dadfdf",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "agdgdgdgg",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "country",
+									"value": "South Korea",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "agdfggfgfgfgfg",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "first_name",
+									"value": "aa",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "last_name",
+									"value": "bb",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password_confirmation",
+									"value": "agdfggfgfgfgfg",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/guests/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"guests",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Booking",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/bookings",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bookings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/bookings/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bookings",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/bookings/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bookings",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guest_id",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "room_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "checkin_date",
+									"value": "2023-07-10",
+									"type": "text"
+								},
+								{
+									"key": "checkout_date",
+									"value": "2023-07-11",
+									"type": "text"
+								},
+								{
+									"key": "num_adults",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "num_children",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "special_request",
+									"value": "special birthday",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/bookings",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bookings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "StaffRole",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffroles",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffroles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffroles/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffroles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffroles/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffroles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staffrole_title",
+									"value": "staff",
+									"type": "text"
+								},
+								{
+									"key": "staffrole_desc",
+									"value": "cashin/out",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffroles",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffroles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staffrole_title",
+									"value": "chef",
+									"type": "text"
+								},
+								{
+									"key": "staffrole_desc",
+									"value": "cooking as customer like",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffroles/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffroles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Partial",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staffrole_title",
+									"value": "assisatant of chef",
+									"type": "text"
+								},
+								{
+									"key": "staffrole_desc",
+									"value": "cooking as customer like",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffroles/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffroles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Staff",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffs",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffs/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffs/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staffrole_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "adsds",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/User/Pictures/Screenshots/Screenshot (6).png"
+								},
+								{
+									"key": "bio",
+									"value": "fdfdsfdsfdsfds",
+									"type": "text"
+								},
+								{
+									"key": "DOB",
+									"value": "1888-07-03",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "09784210",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "a@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "arfesfdfdfd",
+									"type": "text"
+								},
+								{
+									"key": "salary_type",
+									"value": "daily",
+									"type": "text"
+								},
+								{
+									"key": "salary_amount",
+									"value": "236000",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "thu",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "win",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "arfesfdfdfd",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffs",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staffrole_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "yu",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "bio",
+									"value": "gfhgh",
+									"type": "text"
+								},
+								{
+									"key": "DOB",
+									"value": "1888-07-03",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "female",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "097653123",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "yu@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "dgsdgfdgdgfgf",
+									"type": "text"
+								},
+								{
+									"key": "salary_type",
+									"value": "mothly",
+									"type": "text"
+								},
+								{
+									"key": "salary_amount",
+									"value": "890000",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "ty",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "yt",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "dgsdgfdgdgfgf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffs/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffs",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Partial",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staffrole_id",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "yu yu",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "bio",
+									"value": "gfhgh",
+									"type": "text"
+								},
+								{
+									"key": "DOB",
+									"value": "1888-07-03",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "female",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "097653123",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "yu@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "dgsdgfdgdgfgf",
+									"type": "text"
+								},
+								{
+									"key": "salary_type",
+									"value": "mothly",
+									"type": "text"
+								},
+								{
+									"key": "salary_amount",
+									"value": "890000",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "ty",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "yt",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "dgsdgfdgdgfgf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffs/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffs",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "StaffPayment",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffpayments",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffpayments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffpayments/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffpayments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staff_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "payment_date",
+									"value": "2023-07-20",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffpayments/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffpayments",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Copy",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staff_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "3000",
+									"type": "text"
+								},
+								{
+									"key": "payment_date",
+									"value": "2023-07-20",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffpayments/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffpayments",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staff_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "15000",
+									"type": "text"
+								},
+								{
+									"key": "payment_date",
+									"value": "2023-07-13",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/staffpayments",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"staffpayments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"aunguang\",\r\n    \"email\":\"tt@gmail.com\",\r\n    \"password\":\"1223445555\",\r\n    \"password_confirmation\":\"1223445555\",\r\n    \"DOB\":\"2001-01-14\",\r\n    \"first_name\":\"Ya\",\r\n    \"last_name\":\"Aung\",\r\n    \"phone_no\":\"0931327\",\r\n     \"country\":\"USA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "khin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1223445555",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "10|HhGJVaJVJhitXJ3xgfm3kj5tHzbAYP9LqxgJ1Y8y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "ZtF9bWzMj6hqh2bCCGbVwjT5hVhK7gEJPb9qK2kd",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/logout-all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout-all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blog",
+			"item": [
+				{
+					"name": "Post",
+					"item": [
+						{
+							"name": "Store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "14|vAvGklNvLd9jl5AUciK5EfXQwJPGV6HkG7nwhbk8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "photo",
+											"type": "file",
+											"src": "/C:/Users/User/Pictures/Screenshots/Screenshot (6).png"
+										},
+										{
+											"key": "small_desc",
+											"value": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+											"type": "text"
+										},
+										{
+											"key": "long_desc",
+											"value": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted.\nFar far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows.",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "AAAAAAAAAAA",
+											"type": "text"
+										},
+										{
+											"key": "user_id",
+											"value": "5",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/posts?photo",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"posts"
+									],
+									"query": [
+										{
+											"key": "photo",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Index",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "12|8UbQrlnhXn2hGJ8avaYeHyBVBRaw8yqfsEcpfcHi",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/posts",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"posts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "12|8UbQrlnhXn2hGJ8avaYeHyBVBRaw8yqfsEcpfcHi",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/posts/5",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"posts",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Destroy",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "12|8UbQrlnhXn2hGJ8avaYeHyBVBRaw8yqfsEcpfcHi",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/posts/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"posts",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "12|8UbQrlnhXn2hGJ8avaYeHyBVBRaw8yqfsEcpfcHi",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "photo",
+											"type": "file",
+											"src": "/C:/Users/User/Pictures/Screenshots/Screenshot (12).png"
+										},
+										{
+											"key": "small_desc",
+											"value": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in ",
+											"type": "text"
+										},
+										{
+											"key": "long_desc",
+											"value": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence.\nFar far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows.",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "BBBBBBB",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/posts?13",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"posts"
+									],
+									"query": [
+										{
+											"key": "13",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Comment",
+					"item": [
+						{
+							"name": "Index",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "14|vAvGklNvLd9jl5AUciK5EfXQwJPGV6HkG7nwhbk8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/comments",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"comments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "14|vAvGklNvLd9jl5AUciK5EfXQwJPGV6HkG7nwhbk8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/comments/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"comments",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "14|vAvGklNvLd9jl5AUciK5EfXQwJPGV6HkG7nwhbk8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/comments/2?comment=so sweet",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"comments",
+										"2"
+									],
+									"query": [
+										{
+											"key": "comment",
+											"value": "so sweet"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Store",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "14|vAvGklNvLd9jl5AUciK5EfXQwJPGV6HkG7nwhbk8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "post_id",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "id",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "comment",
+											"value": "yeah i fine",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/comments",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"comments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Destroy",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "14|vAvGklNvLd9jl5AUciK5EfXQwJPGV6HkG7nwhbk8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/comments/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"comments",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "LIke",
+					"item": [
+						{
+							"name": "New Request",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "14|vAvGklNvLd9jl5AUciK5EfXQwJPGV6HkG7nwhbk8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "5",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/posts/like?5",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"posts",
+										"like"
+									],
+									"query": [
+										{
+											"key": "5",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Testimonials",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|vAvGklNvLd9jl5AUciK5EfXQwJPGV6HkG7nwhbk8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/testimonials",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"testimonials"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|vAvGklNvLd9jl5AUciK5EfXQwJPGV6HkG7nwhbk8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/testimonials/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"testimonials",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|vAvGklNvLd9jl5AUciK5EfXQwJPGV6HkG7nwhbk8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "testi_cont",
+									"value": "gjhjhkkjkjkjkjkj",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "7",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/testimonials/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"testimonials",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|vAvGklNvLd9jl5AUciK5EfXQwJPGV6HkG7nwhbk8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "testi_cont",
+									"value": "This application provides users with tools to translate between languages and they now include an image option; users take a photograph of a sign, piece of ...",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "7",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/testimonials",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"testimonials"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|vAvGklNvLd9jl5AUciK5EfXQwJPGV6HkG7nwhbk8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/testimonials/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"testimonials",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "full_name",
+									"value": "marchmay",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "march@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": "testing testing ",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "good night",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/send-email",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"send-email"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Banner",
+			"item": []
+		},
+		{
+			"name": "About_Us",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/aboutus",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"aboutus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/aboutus/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"aboutus",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/aboutus/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"aboutus",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "photo",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "HI",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/aboutus/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"aboutus",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/User/Pictures/Screenshots/Screenshot (4).png"
+								},
+								{
+									"key": "title",
+									"value": "Hello",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "testngtestubgrestbniubter",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/aboutus",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"aboutus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Banner",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/banners",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"banners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/banners/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"banners",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/banners/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"banners",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "banner_src",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "alt_text",
+									"value": "pont",
+									"type": "text"
+								},
+								{
+									"key": "public_status",
+									"value": "on",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/banners/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"banners",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "banner_src",
+									"type": "file",
+									"src": "/C:/Users/User/Pictures/Screenshots/Screenshot (10).png"
+								},
+								{
+									"key": "alt_text",
+									"value": "bbbbbbbbbbbbbbb",
+									"type": "text"
+								},
+								{
+									"key": "public_status",
+									"value": "off",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/banners",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"banners"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bill",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/bills",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/bills/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bills",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/bills/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bills",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/ecmascript",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "invoice_no",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "payment_mode",
+									"value": "AYA Pay",
+									"type": "text"
+								},
+								{
+									"key": "public_status",
+									"value": "on",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/bills/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bills",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "invoice_no",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "booking_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "guest_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "room_charge",
+									"value": "45000",
+									"type": "text"
+								},
+								{
+									"key": "room_service",
+									"value": "5000",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_charges",
+									"value": "5000",
+									"type": "text"
+								},
+								{
+									"key": "bar_charges",
+									"value": "5000",
+									"type": "text"
+								},
+								{
+									"key": "misc_charges",
+									"value": "1500",
+									"type": "text"
+								},
+								{
+									"key": "late_checkout_charges",
+									"value": "50000",
+									"type": "text"
+								},
+								{
+									"key": "payment_date",
+									"value": "2023-07-14",
+									"type": "text"
+								},
+								{
+									"key": "payment_mode",
+									"value": "KPay",
+									"type": "text"
+								},
+								{
+									"key": "creditcard_no",
+									"value": "000178945133",
+									"type": "text"
+								},
+								{
+									"key": "expire_date",
+									"value": "2023-07-16",
+									"type": "text"
+								},
+								{
+									"key": "cheque_no",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/bills",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bills"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
