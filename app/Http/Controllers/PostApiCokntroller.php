@@ -25,8 +25,10 @@ class PostApiCokntroller extends Controller
     {
         $request->validate([
             // "user_id"=>"required|exists:users,id",
+            "category_id"=>"required|exists:categories,id",
             "title"=>"required",
             "photo"=>"required|file|mimes:jpeg,jpg,png,max:512",
+            "post_tags"=>"required",
             "small_desc"=>"required",
             "long_desc"=>"required"
         ]);
@@ -35,9 +37,12 @@ class PostApiCokntroller extends Controller
 
         $post = Post::create([
 
-            "user_id"=>Auth::user()->id,
+            "user_id"=>Auth::id(),
+            // "user_id"=>Auth::user()->id,
+            "category_id"=>$request->category_id,
             "title"=>$request->title,
             "photo"=>$newName,
+            "post_tags"=>$request->post_tags,
             "small_desc"=>$request->small_desc,
             "long_desc"=>$request->long_desc
 
@@ -63,8 +68,10 @@ class PostApiCokntroller extends Controller
     public function update(Request $request, string $id)
     {   
         $request->validate([
+            "category_id"=>"nullable|exists:categories,id",
             "title"=>"nullable",
             "photo"=>"nullable",
+            "post_tags"=>"required",
             "small_desc"=>"nullable",
             "long_desc"=>"nullable"
         ]);
@@ -78,6 +85,9 @@ class PostApiCokntroller extends Controller
         }
         if($request->has('photo')){
             $post->photo=$request->photo;
+        }
+        if($request->has('post_tags')){
+            $post->post_tags=$request->post_tags;
         }
         if($request->has('small_desc')){
             $post->small_desc=$request->small_desc;

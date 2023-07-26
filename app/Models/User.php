@@ -31,11 +31,11 @@ class User extends Authenticatable
     ];
 
     
-    protected $with = ['posts','comments'];
+    protected $with = ['comments'];
 
-    public function posts(){
-        return $this->hasMany(Post::class);
-    }
+    // public function posts(){
+    //     return $this->hasMany(Post::class);
+    // }
 
     public function comments(){
         return $this->hasMany(Comment::class);

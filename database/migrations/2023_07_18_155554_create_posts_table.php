@@ -15,8 +15,10 @@ return new class extends Migration
             $table->id();
             // $table->unsignedBigInteger('user_id');
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('category_id')->constrained()->cascadeOnDelete();
             $table->string('title');
             $table->string('photo')->default();
+            $table->string('post_tags');
             $table->text('small_desc');
             $table->text('long_desc');
             $table->timestamps();

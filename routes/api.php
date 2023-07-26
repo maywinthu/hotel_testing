@@ -5,6 +5,7 @@ use App\Http\Controllers\ApiAuthController;
 use App\Http\Controllers\BannerApiController;
 use App\Http\Controllers\BillApiController;
 use App\Http\Controllers\BookingApiController;
+use App\Http\Controllers\CategoryApiController;
 use App\Http\Controllers\CommentApiController;
 use App\Http\Controllers\ContactApiController;
 use App\Http\Controllers\GuestApiController;
@@ -91,4 +92,4 @@ Route::middleware(['auth:sanctum'])->group(function(){
     Route::apiResource('likes',LikeApiController::class);
 });
 
-
+Route::apiResource('categorys',CategoryApiController::class);

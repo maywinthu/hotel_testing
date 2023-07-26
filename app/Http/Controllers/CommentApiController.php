@@ -84,6 +84,6 @@ class CommentApiController extends Controller
         foreach($comments as $comment){
             $comment->user;
         }
-        return response()->json(['success'=>'true','comment'=>$comment]);
+        return response()->json(['success'=>true,'comment'=>$comment]);
     }
 }
