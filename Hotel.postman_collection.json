@@ -21,7 +21,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/roomtypes",
+							"raw": "{{base_url}}/roomtypes",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -44,7 +44,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/roomtypes/2",
+							"raw": "{{base_url}}/roomtypes/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -108,7 +108,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/roomtypes/2",
+							"raw": "{{base_url}}/roomtypes/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -181,7 +181,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/roomtypes/2",
+							"raw": "{{base_url}}/roomtypes/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -205,7 +205,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/roomtypes/3",
+							"raw": "{{base_url}}/roomtypes/3",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -285,7 +285,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/roomtypes",
+							"raw": "{{base_url}}/roomtypes",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -319,7 +319,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/photos",
+							"raw": "{{base_url}}/photos",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -348,7 +348,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/photos/2",
+							"raw": "{{base_url}}/photos/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -403,7 +403,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/photos",
+							"raw": "{{base_url}}/photos",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -437,7 +437,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/rooms",
+							"raw": "{{base_url}}/rooms",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -466,7 +466,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/rooms/2",
+							"raw": "{{base_url}}/rooms/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -516,7 +516,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/rooms/2",
+							"raw": "{{base_url}}/rooms/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -568,7 +568,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/rooms/2",
+							"raw": "{{base_url}}/rooms/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -592,7 +592,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/rooms/2",
+							"raw": "{{base_url}}/rooms/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -647,7 +647,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/rooms",
+							"raw": "{{base_url}}/rooms",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -675,7 +675,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/hotels",
+							"raw": "{{base_url}}/hotels",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -698,7 +698,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/hotels/1",
+							"raw": "{{base_url}}/hotels/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -772,7 +772,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/hotels/4",
+							"raw": "{{base_url}}/hotels/4",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -853,7 +853,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/hotels/4",
+							"raw": "{{base_url}}/hotels/4",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -877,7 +877,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/hotels/1",
+							"raw": "{{base_url}}/hotels/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -957,7 +957,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/hotels",
+							"raw": "{{base_url}}/hotels",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -991,7 +991,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/guests",
+							"raw": "{{base_url}}/guests",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1020,7 +1020,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/guests/3",
+							"raw": "{{base_url}}/guests/3",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1050,7 +1050,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/guests/1",
+							"raw": "{{base_url}}/guests/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1170,7 +1170,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/guests",
+							"raw": "{{base_url}}/guests",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1290,7 +1290,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/guests/1",
+							"raw": "{{base_url}}/guests/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1419,7 +1419,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/guests/1",
+							"raw": "{{base_url}}/guests/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1448,7 +1448,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/bookings",
+							"raw": "{{base_url}}/bookings",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1471,7 +1471,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/bookings/2",
+							"raw": "{{base_url}}/bookings/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1495,7 +1495,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/bookings/1",
+							"raw": "{{base_url}}/bookings/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1559,7 +1559,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/bookings",
+							"raw": "{{base_url}}/bookings",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1587,7 +1587,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffroles",
+							"raw": "{{base_url}}/staffroles",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1610,7 +1610,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffroles/1",
+							"raw": "{{base_url}}/staffroles/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1634,7 +1634,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffroles/1",
+							"raw": "{{base_url}}/staffroles/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1673,7 +1673,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffroles",
+							"raw": "{{base_url}}/staffroles",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1717,7 +1717,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffroles/5",
+							"raw": "{{base_url}}/staffroles/5",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1762,7 +1762,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffroles/5",
+							"raw": "{{base_url}}/staffroles/5",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1791,7 +1791,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffs",
+							"raw": "{{base_url}}/staffs",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1814,7 +1814,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffs/1",
+							"raw": "{{base_url}}/staffs/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1838,7 +1838,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffs/1",
+							"raw": "{{base_url}}/staffs/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -1949,7 +1949,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffs",
+							"raw": "{{base_url}}/staffs",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -2060,7 +2060,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffs/2",
+							"raw": "{{base_url}}/staffs/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -2173,7 +2173,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffs/2",
+							"raw": "{{base_url}}/staffs/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -2208,7 +2208,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffpayments",
+							"raw": "{{base_url}}/staffpayments",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -2237,7 +2237,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffpayments/1",
+							"raw": "{{base_url}}/staffpayments/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -2287,7 +2287,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffpayments/2",
+							"raw": "{{base_url}}/staffpayments/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -2338,7 +2338,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffpayments/2",
+							"raw": "{{base_url}}/staffpayments/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -2388,7 +2388,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/staffpayments",
+							"raw": "{{base_url}}/staffpayments",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -2432,7 +2432,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/register",
+							"raw": "{{base_url}}/register",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -2477,7 +2477,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/login",
+							"raw": "{{base_url}}/login",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -2510,7 +2510,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/logout",
+							"raw": "{{base_url}}/logout",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -2543,7 +2543,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/logout-all",
+							"raw": "{{base_url}}/logout-all",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -2614,7 +2614,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://127.0.0.1:8000/api/posts?photo",
+									"raw": "{{base_url}}/posts?photo",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -2659,7 +2659,7 @@
 									}
 								],
 								"url": {
-									"raw": "http://127.0.0.1:8000/api/posts",
+									"raw": "{{base_url}}/posts",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -2698,7 +2698,7 @@
 									}
 								],
 								"url": {
-									"raw": "http://127.0.0.1:8000/api/posts/5",
+									"raw": "{{base_url}}/posts/5",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -2738,7 +2738,7 @@
 									}
 								],
 								"url": {
-									"raw": "http://127.0.0.1:8000/api/posts/2",
+									"raw": "{{base_url}}/posts/2",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -2803,7 +2803,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://127.0.0.1:8000/api/posts?13",
+									"raw": "{{base_url}}/posts?13",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -2847,7 +2847,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://127.0.0.1:8000/api/comments",
+									"raw": "{{base_url}}/comments",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -2880,7 +2880,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://127.0.0.1:8000/api/comments/2",
+									"raw": "{{base_url}}/comments/2",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -2914,7 +2914,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "http://127.0.0.1:8000/api/comments/2?comment=so sweet",
+									"raw": "{{base_url}}/comments/2?comment=so sweet",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -2975,7 +2975,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://127.0.0.1:8000/api/comments",
+									"raw": "{{base_url}}/comments",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -3008,7 +3008,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "http://127.0.0.1:8000/api/comments/1",
+									"raw": "{{base_url}}/comments/1",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -3063,7 +3063,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://127.0.0.1:8000/api/posts/like?5",
+									"raw": "{{base_url}}/posts/like?5",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -3110,7 +3110,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/testimonials",
+							"raw": "{{base_url}}/testimonials",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3143,7 +3143,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/testimonials/2",
+							"raw": "{{base_url}}/testimonials/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3199,7 +3199,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/testimonials/2",
+							"raw": "{{base_url}}/testimonials/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3249,7 +3249,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/testimonials",
+							"raw": "{{base_url}}/testimonials",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3282,7 +3282,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/testimonials/1",
+							"raw": "{{base_url}}/testimonials/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3342,7 +3342,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/send-email",
+							"raw": "{{base_url}}/send-email",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3374,7 +3374,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/aboutus",
+							"raw": "{{base_url}}/aboutus",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3397,7 +3397,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/aboutus/1",
+							"raw": "{{base_url}}/aboutus/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3421,7 +3421,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/aboutus/3",
+							"raw": "{{base_url}}/aboutus/3",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3465,7 +3465,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/aboutus/1",
+							"raw": "{{base_url}}/aboutus/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3509,7 +3509,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/aboutus",
+							"raw": "{{base_url}}/aboutus",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3537,7 +3537,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/banners",
+							"raw": "{{base_url}}/banners",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3560,7 +3560,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/banners/1",
+							"raw": "{{base_url}}/banners/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3584,7 +3584,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/banners/3",
+							"raw": "{{base_url}}/banners/3",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3629,7 +3629,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/banners/1",
+							"raw": "{{base_url}}/banners/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3673,7 +3673,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/banners",
+							"raw": "{{base_url}}/banners",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3701,7 +3701,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/bills",
+							"raw": "{{base_url}}/bills",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3724,7 +3724,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/bills/1",
+							"raw": "{{base_url}}/bills/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3748,7 +3748,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/bills/3",
+							"raw": "{{base_url}}/bills/3",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3799,7 +3799,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/bills/1",
+							"raw": "{{base_url}}/bills/1",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -3898,7 +3898,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/bills",
+							"raw": "{{base_url}}/bills",
 							"protocol": "http",
 							"host": [
 								"127",
